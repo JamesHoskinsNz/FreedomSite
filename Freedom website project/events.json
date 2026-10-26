@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Water Baptism",
+    "date": "2026-10-25",
+    "time": "12:30 pm",
+    "description": "Join us at the river as we celebrate new life in Christ. Bring a towel, a change of clothes, and invite your friends and family to witness this special step of faith!",
+    "image": "assets/images/baptism.jpeg"
+  },
+  {
+    "title": "Annual General Meeting",
+    "date": "2026-11-04",
+    "time": "After Church 12pm ish",
+    "description": "Our yearly AGM where we review the financials, discuss the vision for the upcoming year, and vote on trust board members. All members are encouraged to attend.",
+    "image": "assets/images/AGM.jpeg"
+  },
+  {
+    "title": "Mega Group",
+    "date": "2026-10-28",
+    "time": "10:30am & 7:00pm",
+    "description": "This week: More Proverbs. Come along for Worship - Study - Prayer - Fellowship",
+    "image": "assets/images/mega.jpeg"
+  }
+]

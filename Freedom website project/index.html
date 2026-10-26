@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom Christian Church | Hamilton NZ</title>
+    <!-- LINK TO EXTERNAL CSS (NO INLINE STYLES ALLOWED) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         TOP ALERT BAR
+         ========================================== -->
+    <div class="alert-bar">
+        Join us this Sunday at 9:00am & 10:30am • 3 Clow Place, Hamilton
+    </div>
+
+    <!-- ==========================================
+         MAIN NAVIGATION HEADER
+         ========================================== -->
+    <header class="main-header">
+        <div class="logo-container">
+            <!-- Replace with actual Freedom Logo Image -->
+            <h2>Freedom Christian Church</h2>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links">
+            <a href="index.html" style="color: var(--primary-color);">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="ministries.html">Ministries</a>
+            <a href="discipleship.html">Discipleship</a>
+            <a href="serve.html">Serve</a>
+            <a href="media.html">Media</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="contact.html">Contact</a>
+            <!-- Tithe.ly or Pushpay Giving Link goes here -->
+            <a href="#give" class="btn-give">Give</a>
+        </nav>
+
+        <!-- Mobile Hamburger Menu Icon (JS logic required to toggle nav) -->
+        <div class="mobile-menu-toggle">
+            ☰
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero">
+        <h1>Welcome to Freedom</h1>
+        <p>A vibrant, Pentecostal church in South Hamilton. We are multicultural, multi-generational, and we save a seat for everyone.</p>
+        <a href="plan-a-visit.html" class="btn-primary">Plan a Visit</a>
+    </section>
+
+    <!-- ==========================================
+         TILE NAVIGATION (LAKEPOINTE STYLE)
+         ========================================== -->
+    <section class="quick-links">
+        <h2 style="text-align: center;">Take Your Next Step</h2>
+        <div class="tile-grid">
+            
+            <!-- Tile 1 -->
+            <a href="ministries.html" class="tile">
+                <h3>Our Ministries</h3>
+                <p>Youth, Megagroup, and kids programming. Find your community here.</p>
+            </a>
+
+            <!-- Tile 2 -->
+            <a href="about.html" class="tile">
+                <h3>Who We Are</h3>
+                <p>Meet Pastor Ray and Carolien, and discover our core values.</p>
+            </a>
+
+            <!-- Tile 3 -->
+            <a href="sermons.html" class="tile">
+                <h3>Latest Messages</h3>
+                <p>Listen to recent sermons and download Bible studies.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DYNAMIC PLACEHOLDER: LATEST SERMON
+         ========================================== -->
+    <section class="dynamic-section bg-light">
+        <h2>Latest Sermon</h2>
+        <p>Catch up on our current series.</p>
+        
+        <!-- TECH TEAM: The script for reading the Dropbox/GitHub folder will inject the HTML for the audio player inside this div -->
+        <div id="latest-sermon-container">
+            <p><em>[Placeholder: Audio Player will load here automatically]</em></p>
+        </div>
+        
+        <div style="margin-top: 2rem;">
+            <a href="sermons.html" class="btn-primary">View Sermon Archive</a>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DYNAMIC PLACEHOLDER: SOCIAL FEED
+         ========================================== -->
+    <section class="dynamic-section">
+        <h2>Church Life</h2>
+        <p>Stay connected with us throughout the week.</p>
+
+        <!-- TECH TEAM: Paste the Facebook/Instagram embed widget code inside this div -->
+        <div id="social-feed-container">
+            <p><em>[Placeholder: Social Media Feed Widget will load here]</em></p>
+        </div>
+    </section>
+    <!-- ==========================================
+         DYNAMIC UPCOMING EVENTS
+         ========================================== -->
+    <section class="dynamic-section">
+        <h2>Upcoming Events</h2>
+        <p style="margin-bottom: 2rem;">Mark your calendars for what's happening next.</p>
+        
+        <!-- The JS will inject the event tiles inside this grid -->
+        <div id="events-container" class="tile-grid-3">
+            <p><em>Loading events...</em></p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         GLOBAL FOOTER
+         ========================================== -->
+    <footer class="global-footer">
+        
+        <div class="footer-col">
+            <h4>Freedom Christian Church</h4>
+            <p>3 Clow Place, off Kahakatea Drive<br>Hamilton, NZ</p>
+            <p><strong>Postal:</strong> 34 East St. Claudelands, Hamilton 3214</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Phone: (07) 853 3000</p>
+            <p>Mobile: 027 479 7841</p>
+            <p>Email: <a href="mailto:contact@freedom.gen.nz">contact@freedom.gen.nz</a></p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Governance</h4>
+            <p>Waikato City Assembly of God Trust Board</p>
+            <p>Charities Commission Reg: CC22461</p>
+            <p>IRD: 90-066-358</p>
+            <a href="governance.html" style="text-decoration: underline;">View Legal Documents</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Freedom Christian Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to the Javascript file -->
+    <script src="events.js"></script>
+</body>
+</html>
+    
+

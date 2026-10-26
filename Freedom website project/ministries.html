@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministries | Freedom Christian Church</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         TOP ALERT BAR
+         ========================================== -->
+    <div class="alert-bar">
+        Join us this Sunday at 9:00am & 10:30am • 3 Clow Place, Hamilton
+    </div>
+
+    <!-- ==========================================
+         MAIN NAVIGATION HEADER
+         ========================================== -->
+    <header class="main-header">
+        <div class="logo-container">
+            <!-- Replace with actual Freedom Logo Image -->
+            <h2>Freedom Christian Church</h2>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="ministries.html" style="color: var(--primary-color);">Ministries</a>
+            <a href="discipleship.html">Discipleship</a>
+            <a href="serve.html">Serve</a>
+            <a href="media.html">Media</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="contact.html">Contact</a>
+            <!-- Tithe.ly or Pushpay Giving Link goes here -->
+            <a href="#give" class="btn-give">Give</a>
+        </nav>
+
+        <!-- Mobile Hamburger Menu Icon (JS logic required to toggle nav) -->
+        <div class="mobile-menu-toggle">
+            ☰
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="hero" style="padding: 4rem 2rem;">
+        <h1>Ministries & Groups</h1>
+        <p>Find your people and grow your faith.</p>
+    </section>
+
+    <!-- YOUTH MINISTRY -->
+    <section class="dynamic-section bg-light">
+        <h2>Freedom Youth</h2>
+        <p>Programs designed for every age group.</p>
+        
+        
+        <div class="tile-grid-3">
+            <!-- Reigning Tile -->
+            <div class="tile" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/reigning.jpeg'); background-size: cover; background-position: center; color: white; padding: 3rem 1.5rem;">
+                <h3 style="color: white;">Reigning (Ages 10-13)</h3>
+                <p><strong>Leaders:</strong> Bua, Samu, or Elenoa</p>
+            </div>
+
+            <!-- Reflect Tile -->
+            <div class="tile" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/reflect.jpeg'); background-size: cover; background-position: center; color: white; padding: 3rem 1.5rem;">
+                <h3 style="color: white;">Reflect (Ages 13-15)</h3>
+                <p><strong>Leaders:</strong> Torika, Lai, or Connor</p>
+            </div>
+
+            <!-- Risen Tile -->
+            <div class="tile" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/risen.jpeg'); background-size: cover; background-position: center; color: white; padding: 3rem 1.5rem;">
+                <h3 style="color: white;">Risen (Ages 16+)</h3>
+                <p><strong>Leaders:</strong> Bua & Magele</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MEGAGROUP & RIGHTNOW MEDIA -->
+    <section class="dynamic-section">
+        <div class="tile-grid">
+            <div class="tile" style="text-align: left; background-color: var(--primary-color); color: white;">
+                <h2 style="color: white;">MegaGroup</h2>
+                <p><strong>Wednesdays at 10:30 am & 7:00 pm</strong></p>
+                <p>Our primary mid-week meeting for deep bible study, community, and connection.</p>
+                <!-- TECH TEAM: Dynamic placeholder for current study topic -->
+                <div style="background-color: rgba(255,255,255,0.1); padding: 1rem; border-radius: 4px; margin-top: 1.5rem;">
+                    <strong>Current Study:</strong> <span id="megagroup-study-title">Loading...</span>
+                </div>
+            </div>
+            
+            <div class="tile" style="text-align: left;">
+                <h3>RightNow Media</h3>
+                <p>Get free access to thousands of Bible studies and kids' programming.</p>
+                <a href="#rightnow" class="btn-primary" style="margin-top: 1rem;">Sign Up for Free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+     CHURCH INITIATIVES
+     ========================================== -->
+    <section style="text-align: center; margin: 4rem 0;">
+        <h2 style="margin-bottom: 2rem;">Church Initiatives</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            
+            <!-- Freedom Acts Tile -->
+            <div class="tile" style="padding: 4rem 2rem; cursor: pointer;" onclick="toggleConstruction(this)">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Freedom Acts</h3>
+                <p class="status-text" style="color: #555; transition: 0.3s ease;">Learn More &rarr;</p>
+            </div>
+
+            <!-- Freedom Genesis Tile -->
+            <div class="tile" style="padding: 4rem 2rem; cursor: pointer;" onclick="toggleConstruction(this)">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Freedom Genesis</h3>
+                <p class="status-text" style="color: #555; transition: 0.3s ease;">Learn More &rarr;</p>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        function toggleConstruction(tile) {
+            const textElement = tile.querySelector('.status-text');
+            
+            // Check if it currently says "Under Construction"
+            if (textElement.innerHTML.includes('Under Construction')) {
+                // Revert back to original
+                textElement.innerHTML = 'Learn More &rarr;';
+                textElement.style.color = '#555';
+                textElement.style.fontWeight = 'normal';
+            } else {
+                // Change to Under Construction
+                textElement.innerHTML = 'Under Construction 🚧';
+                textElement.style.color = '#e67e22';
+                textElement.style.fontWeight = 'bold';
+            }
+        }
+    </script>
+
+    <!-- ==========================================
+         GLOBAL FOOTER
+         ========================================== -->
+    <footer class="global-footer">
+        
+        <div class="footer-col">
+            <h4>Freedom Christian Church</h4>
+            <p>3 Clow Place, off Kahakatea Drive<br>Hamilton, NZ</p>
+            <p><strong>Postal:</strong> 34 East St. Claudelands, Hamilton 3214</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Phone: (07) 853 3000</p>
+            <p>Mobile: 027 479 7841</p>
+            <p>Email: <a href="mailto:contact@freedom.gen.nz">contact@freedom.gen.nz</a></p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Governance</h4>
+            <p>Waikato City Assembly of God Trust Board</p>
+            <p>Charities Commission Reg: CC22461</p>
+            <p>IRD: 90-066-358</p>
+            <a href="governance.html" style="text-decoration: underline;">View Legal Documents</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Freedom Christian Church. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="study.js"></script>
+</body>
+</html>

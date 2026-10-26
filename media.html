@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos & Music | Freedom Christian Church</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP ALERT BAR -->
+    <div class="alert-bar">
+        Join us this Sunday at 9:00am & 10:30am • 3 Clow Place, Hamilton
+    </div>
+
+    <!-- MAIN NAVIGATION HEADER -->
+    <header class="main-header">
+        <div class="logo-container">
+            <h2>Freedom Christian Church</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="ministries.html">Ministries</a>
+            <a href="discipleship.html">Discipleship</a>
+            <a href="serve.html">Serve</a>
+            <a href="media.html" style="color: var(--primary-color);">Media</a>
+            <a href="contact.html">Contact</a>
+            <a href="#give" class="btn-give">Give</a>
+        </nav>
+        <div class="mobile-menu-toggle">☰</div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="hero" style="padding: 4rem 2rem;">
+        <h1>Photos & Music</h1>
+        <p>Take the worship experience home with you.</p>
+    </section>
+
+    <!-- WORSHIP PLAYLISTS (SPOTIFY/YOUTUBE EMBEDS) -->
+    <section class="dynamic-section">
+        <h2>Worship Playlists</h2>
+        <p style="margin-bottom: 2rem;">Listen to the songs we are singing this season.</p>
+        
+        <div class="tile-grid-3">
+            <!-- Playlist 1 -->
+            <div class="tile" style="padding: 1rem;">
+                <h3>Sunday Setlist</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">The songs we are singing this Sunday.</p>
+                <!-- TECH TEAM: Paste Spotify/YouTube Iframe embed code here -->
+                <div style="background: #eee; height: 350px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <em>[Spotify Embed]</em>
+                </div>
+            </div>
+
+            <!-- Playlist 2 -->
+            <div class="tile" style="padding: 1rem;">
+                <h3>Freedom Youth</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">High-energy worship from our youth band.</p>
+                <!-- TECH TEAM: Paste Spotify/YouTube Iframe embed code here -->
+                <div style="background: #eee; height: 350px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <em>[Spotify Embed]</em>
+                </div>
+            </div>
+
+            <!-- Playlist 3 -->
+            <div class="tile" style="padding: 1rem;">
+                <h3>Quiet Time</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Instrumentals and acoustic tracks for prayer.</p>
+                <!-- TECH TEAM: Paste Spotify/YouTube Iframe embed code here -->
+                <div style="background: #eee; height: 350px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <em>[Apple Music/YouTube Embed]</em>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRACTICE TRACKS (DYNAMIC FOLDER) -->
+    <section class="dynamic-section bg-light">
+        <h2 style="color: var(--accent-color);">Worship Team Resources</h2>
+        <p>Practice tracks and chord charts for the band.</p>
+        
+        <!-- TECH TEAM: The same script used for Sermons will inject the MP3 list here -->
+        <div id="practice-tracks-container" style="max-width: 800px; margin: 2rem auto; text-align: left; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <p><em>[Placeholder: Dynamic MP3 Player List reading from 'Practice' Drop-Folder]</em></p>
+            <ul style="list-style: none; margin-top: 1rem;">
+                <li style="padding: 1rem; border-bottom: 1px solid #eee;">🎵 Way Maker - Key of G <button class="btn-primary" style="float: right; padding: 0.3rem 1rem;">Play</button></li>
+                <li style="padding: 1rem; border-bottom: 1px solid #eee;">🎵 Goodness of God - Key of C <button class="btn-primary" style="float: right; padding: 0.3rem 1rem;">Play</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section class="dynamic-section">
+        <h2>Church Life in Photos</h2>
+        <p style="margin-bottom: 2rem;">A look at what God is doing at Freedom.</p>
+        
+        <!-- TECH TEAM: Either a lightweight CSS grid of 6-8 photos, or an Elfsight Instagram/Facebook Photo Embed widget to auto-update -->
+        <div class="tile-grid-3">
+            <div style="background: #ddd; height: 250px; border-radius: 8px;"><em>[Photo]</em></div>
+            <div style="background: #ddd; height: 250px; border-radius: 8px;"><em>[Photo]</em></div>
+            <div style="background: #ddd; height: 250px; border-radius: 8px;"><em>[Photo]</em></div>
+            <div style="background: #ddd; height: 250px; border-radius: 8px;"><em>[Photo]</em></div>
+            <div style="background: #ddd; height: 250px; border-radius: 8px;"><em>[Photo]</em></div>
+            <div style="background: #ddd; height: 250px; border-radius: 8px;"><em>[Photo]</em></div>
+        </div>
+        
+        <a href="https://facebook.com/FreedomChristianChurch" target="_blank" class="btn-primary" style="margin-top: 2rem;">View More on Facebook</a>
+    </section>
+
+    <!-- GLOBAL FOOTER HERE -->
+
+</body>
+</html>
